@@ -11,6 +11,8 @@ const pages = [
   { el: lazy(() => import('pages/DummyTable')), titleEl: 'dummyTable' },
 ];
 
+const NotFoundPage = lazy(() => import('pages/NotFound'));
+
 export const App = () => {
   const [tabs, setTabs] = useState(null);
   const navigate = useNavigate();
@@ -41,6 +43,7 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<SharedLayout tabs={tabs} />}>
         {RouteCreator(tabs, pages)}
+        <Route path="/*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   ) : (

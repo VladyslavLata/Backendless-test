@@ -5,7 +5,7 @@ const DummyChart = () => {
       {dummyChart.split('').map((item, i) => {
         const margin = i * 10;
         return (
-          <li style={{ marginLeft: `${margin}px` }}>
+          <li key={`${item}${i}`} style={{ marginLeft: `${margin}px` }}>
             <p>{item}</p>
           </li>
         );
