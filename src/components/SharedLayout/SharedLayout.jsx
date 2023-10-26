@@ -5,7 +5,6 @@ import { NavigatePanel } from '../NavigatePanel/NavigatePanel';
 import styles from './SharedLayout.module.css';
 
 export const SharedLayout = ({ tabs }) => {
-  console.log(tabs);
   return (
     <>
       <header className={styles.header}>
