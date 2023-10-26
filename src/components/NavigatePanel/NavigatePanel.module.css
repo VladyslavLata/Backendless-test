@@ -1,0 +1,21 @@
+.navLinkWrapp {
+  display: flex;
+  gap: 30px;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.navLinkWrapp a {
+  padding: 20px 10px;
+  background-color: purple;
+  border-radius: 20px;
+  color: yellow;
+}
+
+  .navLinkWrapp a.active {
+  background-color:  lightskyblue;
+  color : green;
+}
+

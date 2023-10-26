@@ -1,0 +1,25 @@
+.header {
+  padding: 20px 0;
+  background-color: yellow;
+}
+ 
+.container {
+  padding: 0 30px;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: 700;
+  color: blue;
+}
+
+.nav {
+display: flex;
+column-gap: 150px;
+align-items: center;
+}
+
+.navLinkWrapp {
+display: flex;
+gap: 30px
+}
